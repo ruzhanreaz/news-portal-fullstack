@@ -1,0 +1,2 @@
+ALTER TABLE users ADD COLUMN IF NOT EXISTS username VARCHAR(255);
+ALTER TABLE users ADD CONSTRAINT IF NOT EXISTS users_username_key UNIQUE (username);
